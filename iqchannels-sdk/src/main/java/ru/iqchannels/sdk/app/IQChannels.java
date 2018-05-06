@@ -266,6 +266,7 @@ public class IQChannels {
         this.pushTokenSent = false;
         if (this.pushTokenRequest != null) {
             this.pushTokenRequest.cancel();
+            this.pushTokenRequest = null;
         }
 
         this.sendPushToken();
